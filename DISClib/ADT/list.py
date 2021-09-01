@@ -40,7 +40,7 @@ assert config
 def newList(datastructure='SINGLE_LINKED',
             cmpfunction=None,
             key=None,
-            filename=None,
+            filename=None,  
             delimiter=","):
     """Crea una lista vacia
 
