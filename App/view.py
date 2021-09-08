@@ -63,6 +63,8 @@ def printAuthorData(author):
         print('Autor encontrado: ' + author['name'])
         print('Promedio: ' + str(author['average_rating']))
         print('Total de libros: ' + str(lt.size(author['books'])))
+        
+        print(catalog['books'])
         for book in lt.iterator(author['books']):
             print('Titulo: ' + book['title'] + '  ISBN: ' + book['isbn'])
     else:
@@ -96,6 +98,8 @@ while True:
         print('Géneros cargados: ' + str(lt.size(catalog['tags'])))
         print('Asociación de Géneros a Libros cargados: ' +
               str(lt.size(catalog['book_tags'])))
+        libro1= lt.getElement(catalog['books'],1)
+        print(libro1)
 
     elif int(inputs[0]) == 2:
         number = input("Buscando los TOP ?: ")
